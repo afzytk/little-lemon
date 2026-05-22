@@ -1,1 +1,62 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+
+body {
+  @apply font-karla text-lemon-dark bg-white;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-markazi;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+
+:root {
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-orange: #ee9972;
+  --secondary-cream: #edefee;
+  --text-dark: #333333;
+
+  --font-header: "Markazi Text", serif;
+  --font-body: "Karla", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-header);
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #e2be12;
+}
