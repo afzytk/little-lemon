@@ -20,21 +20,38 @@ const Footer = () => {
             Navigation
           </h4>
           <ul className="flex flex-col gap-2">
-            {[
-              { label: "Home", to: "/" },
-              { label: "About", to: "/about" },
-              { label: "Menu", to: "/menu" },
-              { label: "Reservations", to: "/booking" },
-            ].map((link) => (
-              <li key={link.label}>
-                <Link
-                  to={link.to}
-                  className="text-gray-400 hover:text-[#F4CE14] text-sm transition-colors"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            <li>
+              <a
+                href="#home"
+                className="text-gray-400 hover:text-[#F4CE14] text-sm transition-colors duration-200"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="text-gray-400 hover:text-[#F4CE14] text-sm transition-colors duration-200"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#menu"
+                className="text-gray-400 hover:text-[#F4CE14] text-sm transition-colors duration-200"
+              >
+                Menu
+              </a>
+            </li>
+            <li>
+              <Link
+                to="/booking"
+                className="text-gray-400 hover:text-[#F4CE14] text-sm transition-colors duration-200"
+              >
+                Reservations
+              </Link>
+            </li>
           </ul>
         </div>
 
