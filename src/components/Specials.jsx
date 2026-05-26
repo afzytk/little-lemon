@@ -29,7 +29,7 @@ const dishes = [
 
 const Specials = () => {
   return (
-    <section className="px-10 py-14 bg-white">
+    <section id="menu" className="px-10 py-14 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Header row */}
         <div className="flex justify-between items-center mb-10">

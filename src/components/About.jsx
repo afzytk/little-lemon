@@ -3,7 +3,7 @@ import Chefs from "../assets/Mario-and-Adrian.jpg";
 
 const About = () => {
   return (
-    <section className="px-10 py-14 bg-white">
+    <section className="px-10 py-14 bg-white" id="about">
       <div className="max-w-6xl mx-auto flex justify-between items-center gap-12">
         {/* Text content */}
         <div className="max-w-md">
@@ -17,15 +17,15 @@ const About = () => {
         </div>
 
         {/* Images */}
-        <div className="flex gap-6 relative flex-shrink-0">
+        <div className="flex gap-6 relative shrink-0">
           <img
             src={restaurant}
-            className="w-56 h-72 object-cover rounded-2xl [object-position:30%]"
+            className="w-56 h-72 object-cover rounded-2xl object-[30%]"
             alt="Restaurant"
           />
           <img
             src={Chefs}
-            className="w-56 h-72 object-cover rounded-2xl mt-10 [object-position:85%]"
+            className="w-56 h-72 object-cover rounded-2xl mt-10 object-[85%]"
             alt="Chefs"
           />
         </div>

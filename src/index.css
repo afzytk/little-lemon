@@ -10,6 +10,15 @@ h3 {
   font-family: "Markazi Text", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#menu {
+  scroll-margin-top: 70px;
+}
 :root {
   --primary-green: #495e57;
   --primary-yellow: #f4ce14;
